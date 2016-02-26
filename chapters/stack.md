@@ -31,7 +31,7 @@ s.pretty_print
 # History
 ```
 
-The `push()` method is used to add books to the stack.  The `pop()` method is used to take books off the stack.
+The `push()` method is used to add books to the top of the stack.  The `pop()` method is used to take books off the top of the stack.
 
 ```ruby
 s.pop # => "Physics"
