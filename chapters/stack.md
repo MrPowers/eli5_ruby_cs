@@ -1,10 +1,14 @@
 # Stacks
 
-A stack is a ordered collection of items with a top and a base.  Items are always added or removed from the top of the stack in a last-in-first-out manner (LIFO).  In the following stack, the "History" book is added first, then "Music", "Physics", "Calculus", and finally "Python".  The "Python" book was the last item that was added to the stack and would be the first item removed from the stack (last-in-first-out).
+A stack is a ordered collection of items with a top and a base.  Items can be added to the top of the stack or removed from the top of the stack.  The last item added to the stack is the first item that will be removed which is called last-in-first-out (LIFO).
+
+In the following stack, the "History" book is added first, then "Music", "Physics", "Calculus", and finally "Python".
 
 ![books](https://github.com/MrPowers/eli5_ruby_cs/blob/master/pictures/stack/books.png)
 
-A stack is an array and can be modeled as follows (the top of the stack is the end of the array):
+The "History" book is at the base of the stack and the "Python" book is at the top.
+
+A stack can be modelled as an array (the top of the stack is the end of the array):
 
 ```ruby
 class Stack < Array
@@ -40,5 +44,5 @@ s.pretty_print
 # History
 ```
 
-Stacks are very simple data structures.  Items can be added to the top or taken off of the top, that's it!
+Stacks are simple data structures.  Items can be added to the top or taken off of the top, that's it!
 
