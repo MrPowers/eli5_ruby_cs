@@ -4,7 +4,7 @@ A stack is a ordered collection of items with a top and a base.  Items are alway
 
 ![books](https://github.com/MrPowers/eli5_ruby_cs/blob/master/pictures/stack/books.png)
 
-A stack is an array and can be modeled as follows:
+A stack is an array and can be modeled as follows (the top of the stack is the end of the array):
 
 ```ruby
 class Stack < Array
@@ -41,5 +41,4 @@ s.pretty_print
 ```
 
 Stacks are very simple data structures.  Items can be added to the top or taken off of the top, that's it!
-
 
