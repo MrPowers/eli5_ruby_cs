@@ -46,3 +46,37 @@ s.pretty_print
 
 Stacks are simple data structures.  Items can be added to the top or taken off of the top, that's it!
 
+## Reversing a string with a stack
+
+Here is a method that uses a stack to reverse a string:
+
+
+```ruby
+def reverse(str)
+  stack = str.split("")
+  result = ""
+  while !stack.empty?
+    result += stack.pop
+  end
+  result
+end
+```
+
+The stack is created by splitting a string into an array of letters.  A while loop is used to append the top letter in the stack to the resulting string until the stack is empty.
+
+The `reverse` method can be written with the `push` method to explicitly demonstrate how each item is added to the top of the stack.
+
+```ruby
+def reverse(str)
+  stack = []
+  str.split("").each do |item|
+    stack.push(item)
+  end
+  result = ""
+  while !stack.empty?
+    result += stack.pop
+  end
+  result
+end
+```
+
