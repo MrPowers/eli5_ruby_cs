@@ -37,3 +37,16 @@ def exponential(n)
   counter
 end
 
+# inconsistent
+def inconsistent(n)
+  counter = 1
+  if n.odd?
+    counter = counter + 1
+  else
+    (1..n).each do
+      counter = counter + 1
+    end
+  end
+  counter
+end
+
