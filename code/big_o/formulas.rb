@@ -50,3 +50,46 @@ def inconsistent(n)
   counter
 end
 
+# my include (linear)
+def my_include?(arr, element)
+  arr.each do |e|
+    return true if e == element
+  end
+  false
+end
+
+# combinations
+def combinations(arr1, arr2)
+  result = []
+  arr1.each do |e1|
+    arr2.each do |e2|
+      result.push([e1, e2])
+    end
+  end
+  result
+end
+
+combinations([1, 2], ['a', 'b'])
+combinations([1, 2, 3], ['a', 'b', 'c'])
+
+# fib
+def fibonacci(n)
+  return 0 if n == 0
+  return 1 if n == 1
+  fibonacci(n - 1) + fibonacci(n - 2)
+end
+
+def fib_counter(n)
+  @count += 1
+  return 0 if n == 0
+  return 1 if n == 1
+  fib_counter(n - 1) + fib_counter(n - 2)
+end
+
+result = []
+(1..20).each do |n|
+  @count = 0
+  fib_counter(n)
+  result.push([n, @count])
+end
+
