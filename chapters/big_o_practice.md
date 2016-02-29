@@ -75,5 +75,5 @@ fib_counter(10) # => 177
 fib_counter(20) # => 21891
 ```
 
-It is a [bit complicated](http://stackoverflow.com/questions/360748/computational-complexity-of-fibonacci-sequence) to precisely calculate the Big O notation for the `fibonacci()` method.  The computation time is exponential and can be estimated to be `O(n) = 2 ** n`, which is incredibly slow.  This algorithm is so inefficient that even a small input `n = 100` would require about 1267650600228229401496703205376 calculations (e.g. `2 ** 100`).
+It is a [bit complicated](http://stackoverflow.com/questions/360748/computational-complexity-of-fibonacci-sequence) to precisely calculate the Big O notation for the `fibonacci()` method.  The computation time is exponential and can be estimated to be `O(n) = 2 ** n`, which is incredibly slow.  This algorithm is so inefficient that even a small input `n = 100` would require about `1267650600228229401496703205376` calculations (e.g. `2 ** 100`).
 
