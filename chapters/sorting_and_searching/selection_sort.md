@@ -58,3 +58,7 @@ The selection sort algorithm takes `n - 1` passes.  For each pass, we need to it
 
 Notice that the solution for this problem requires a nested loop - nested loops often have `O(n**2)` complexity.
 
+## Todo
+
+Rewrite the selection sort algorith so the unsorted portion of the list is on the left and the sorted portion is on the right.  The algorithm should take the biggest number from the unsorted portion and append it to the leftmost position of the sorted portion.  This has the same runtime and it's just a different implementation to understand the algorithm better.
+
