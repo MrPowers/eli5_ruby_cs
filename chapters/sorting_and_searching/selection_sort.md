@@ -9,20 +9,26 @@ Here is some pseudocode to show how the selection sort algorithm works.  The `|`
 ```
 # starting list
 | 23 42 4 16 8 15
+
 # minimum unsorted element is 4
 # swap 4 and 23
 4 | 42 23 16 8 15
+
 # minimum unsorted element is 8
 # swap 8 and 42
 4 8 | 23 16 42 15
+
 # minimum unsorted element is 15
 # swap 15 and 23
 4 8 15 | 16 42 23
+
 # minimum unsorted element is 16
 # 16 is already in the correct position
 4 8 15 16 | 42 23
+
 # minimum unsorted element is 23
 # swap 23 and 42
+
 4 8 15 16 23 | 42
 # we're done :)
 # the algorithm requires n - 1 passes
